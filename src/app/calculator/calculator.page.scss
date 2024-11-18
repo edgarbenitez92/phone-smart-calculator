@@ -1,0 +1,28 @@
+.calculator-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    --background: black;
+    padding: 20px;
+
+    .current-operation {
+        color: white;
+        font-size: 60px;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .prev-operation {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 30px;
+        text-align: right;
+    }
+
+    .row-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 18px;
+        padding: 0 10px;
+    }
+}

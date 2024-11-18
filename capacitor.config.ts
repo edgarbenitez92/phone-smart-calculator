@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'phone-smart-calculator',
-  webDir: 'www'
+  appId: 'com.phone.smartcalculator',
+  appName: 'PhoneSmartCalculator',
+  webDir: 'www',
 };
 
 export default config;

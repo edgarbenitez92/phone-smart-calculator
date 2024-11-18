@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" class="calculator-container ion-padding">
+  <!-- Previous Operation -->
+  <div *ngIf="recordOperation !== '0'" class="prev-operation">
+    {{ recordOperation }}
+  </div>
+
+  <!-- Current Operation -->
+  <div class="current-operation">
+    {{ operation }}
+  </div>
+
+  <!-- Row Buttons -->
+  <div class="row-buttons">
+    <app-calc-button task="C" color="#9B9B9B" (onClick)="resetOperation()"></app-calc-button>
+    <app-calc-button task="+/-" color="#9B9B9B" (onClick)="changeTypeNumber()"></app-calc-button>
+    <app-calc-button task="del" color="#9B9B9B" (onClick)="simpleClear()"></app-calc-button>
+    <app-calc-button task="/" color="#FF9427" (onClick)="btnSplit()"></app-calc-button>
+  </div>
+
+  <div class="row-buttons">
+    <app-calc-button task="7" (onClick)="setUpOperation('7')"></app-calc-button>
+    <app-calc-button task="8" (onClick)="setUpOperation('8')"></app-calc-button>
+    <app-calc-button task="9" (onClick)="setUpOperation('9')"></app-calc-button>
+    <app-calc-button task="X" color="#FF9427" (onClick)="btnMultiply()"></app-calc-button>
+  </div>
+
+  <div class="row-buttons">
+    <app-calc-button task="4" (onClick)="setUpOperation('4')"></app-calc-button>
+    <app-calc-button task="5" (onClick)="setUpOperation('5')"></app-calc-button>
+    <app-calc-button task="6" (onClick)="setUpOperation('6')"></app-calc-button>
+    <app-calc-button task="-" color="#FF9427" (onClick)="btnSubtract()"></app-calc-button>
+  </div>
+
+  <div class="row-buttons">
+    <app-calc-button task="1" (onClick)="setUpOperation('1')"></app-calc-button>
+    <app-calc-button task="2" (onClick)="setUpOperation('2')"></app-calc-button>
+    <app-calc-button task="3" (onClick)="setUpOperation('3')"></app-calc-button>
+    <app-calc-button task="+" color="#FF9427" (onClick)="btnSum()"></app-calc-button>
+  </div>
+
+  <div class="row-buttons">
+    <app-calc-button task="0" [isZeroButton]="true" (onClick)="setUpOperation('0')"></app-calc-button>
+    <app-calc-button task="." (onClick)="setUpOperation('.')"></app-calc-button>
+    <app-calc-button task="=" color="#FF9427" (onClick)="executeCalc()"></app-calc-button>
+  </div>
+</ion-content>

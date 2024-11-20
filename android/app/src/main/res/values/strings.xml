@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">PhomeSmartCalculator</string>
-    <string name="title_activity_main">PhomeSmartCalculator</string>
+    <string name="app_name">PhoneSmartCalculator</string>
+    <string name="title_activity_main">PhoneSmartCalculator</string>
     <string name="package_name">com.phone.smartcalculator</string>
     <string name="custom_url_scheme">com.phone.smartcalculator</string>
 </resources>

@@ -14,33 +14,33 @@
     <app-calc-button task="C" color="#9B9B9B" (onClick)="resetOperation()"></app-calc-button>
     <app-calc-button task="+/-" color="#9B9B9B" (onClick)="changeTypeNumber()"></app-calc-button>
     <app-calc-button task="del" color="#9B9B9B" (onClick)="simpleClear()"></app-calc-button>
-    <app-calc-button task="/" color="#FF9427" (onClick)="btnSplit()"></app-calc-button>
+    <app-calc-button task="/" color="#00b3ff" (onClick)="btnSplit()"></app-calc-button>
   </div>
 
   <div class="row-buttons">
     <app-calc-button task="7" (onClick)="setUpOperation('7')"></app-calc-button>
     <app-calc-button task="8" (onClick)="setUpOperation('8')"></app-calc-button>
     <app-calc-button task="9" (onClick)="setUpOperation('9')"></app-calc-button>
-    <app-calc-button task="X" color="#FF9427" (onClick)="btnMultiply()"></app-calc-button>
+    <app-calc-button task="X" color="#00b3ff" (onClick)="btnMultiply()"></app-calc-button>
   </div>
 
   <div class="row-buttons">
     <app-calc-button task="4" (onClick)="setUpOperation('4')"></app-calc-button>
     <app-calc-button task="5" (onClick)="setUpOperation('5')"></app-calc-button>
     <app-calc-button task="6" (onClick)="setUpOperation('6')"></app-calc-button>
-    <app-calc-button task="-" color="#FF9427" (onClick)="btnSubtract()"></app-calc-button>
+    <app-calc-button task="-" color="#00b3ff" (onClick)="btnSubtract()"></app-calc-button>
   </div>
 
   <div class="row-buttons">
     <app-calc-button task="1" (onClick)="setUpOperation('1')"></app-calc-button>
     <app-calc-button task="2" (onClick)="setUpOperation('2')"></app-calc-button>
     <app-calc-button task="3" (onClick)="setUpOperation('3')"></app-calc-button>
-    <app-calc-button task="+" color="#FF9427" (onClick)="btnSum()"></app-calc-button>
+    <app-calc-button task="+" color="#00b3ff" (onClick)="btnSum()"></app-calc-button>
   </div>
 
   <div class="row-buttons">
     <app-calc-button task="0" [isZeroButton]="true" (onClick)="setUpOperation('0')"></app-calc-button>
     <app-calc-button task="." (onClick)="setUpOperation('.')"></app-calc-button>
-    <app-calc-button task="=" color="#FF9427" (onClick)="executeCalc()"></app-calc-button>
+    <app-calc-button task="=" color="#00b3ff" (onClick)="executeCalc()"></app-calc-button>
   </div>
 </ion-content>
